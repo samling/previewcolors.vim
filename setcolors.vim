@@ -24,7 +24,7 @@ function! SwitchColor(swinc)
 		else
 			return SwitchColor(a:swinc)
 		endif
-            execute "hi Normal ctermfg=NONE ctermbg=NONE"
+                execute "hi Normal ctermfg=NONE ctermbg=NONE"
 
 	else
 		let s:swback = 1
@@ -38,7 +38,7 @@ function! SwitchColor(swinc)
 		if (!exists('g:colors_name'))
 			return SwitchColor(a:swinc)
 		endif
-            execute "hi Normal ctermfg=NONE ctermbg=NONE"
+                execute "hi Normal ctermfg=NONE ctermbg=NONE"
 	endif
 
 	" show current name on screen. :h :echo-redraw
